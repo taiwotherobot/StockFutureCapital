@@ -20,6 +20,8 @@ public class StockFutureCapital {
         System.out.println("Here are the stocks in your portfolio and how much they closed at?: ");
         Scanner sc = new Scanner(System.in);
 
+      //  Stocks [] stockArray = 
+
         try {
             JsonReader reader = new JsonReader(new FileReader("C:\\Users\\password\\Documents\\NetBeansProjects\\StockCapital\\src\\main\\resource\\sample.json"));
 
@@ -30,7 +32,7 @@ public class StockFutureCapital {
                 while (reader.hasNext()) {
 
                     String key = reader.nextName();
-                    String checkName = sc.nextLine();
+                   // String checkName = sc.nextLine();
 
                     if (key.equals("ticker")) {
 
